@@ -1,0 +1,121 @@
+.blog {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        @media(max-width: 690px) {
+            flex-direction: column;
+        }
+    }
+    &__news {
+        flex: 1 1 74.33%;
+        max-width: 74.33%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        @media(max-width: 690px) {
+            flex: 1 1 100%;
+        max-width: 100%;
+        }
+    }
+    &__sidebar {
+        flex: 0 0 24.33%;
+        max-width: 24.33%;
+        @media(max-width: 690px) {
+            flex: 1 1 100%;
+        max-width: 100%;
+        }
+    }
+    &__cart-news {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+   &__item {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    @media(max-width: 1120px) {
+        flex-direction: column;
+        text-align: center;
+    }
+   }
+   &__img {
+    max-width: 400px;
+    margin: 0 auto;
+     img {
+        width: 100%;
+        border-radius: 3px;
+        max-height: 260px;
+    }
+   }
+   &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+   }
+   &__title {
+    font-size: 25px;
+    transition: all 0.6s ease 0.3s;
+    line-height: 25px;
+   }
+   &__date {
+    color: rgb(92, 92, 92);
+   }
+   &__title:hover {
+    color: $ColorHead;
+   }
+   &__comment-admin {
+    display: flex;
+    column-gap: 20px;
+    @media(max-width: 1120px) {
+        margin: 0 auto;
+    }
+   }
+   &__comment {
+    color: $ColorHead;
+   }
+   &__post-title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+   }
+   &__post-comment-admin {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    @media(max-width:340px) {
+        flex-direction: column;
+        text-align: center;
+    }
+   }
+   &__post-img {
+    max-width: 800px;
+    margin: 0 auto;
+    img {
+        width: 100%;
+        max-height: 400px;
+    }
+   }
+   &__post-content {
+    padding: 5px;
+   }
+   &__post-content p {
+    padding: 10px 0;
+   }
+   .no-results  {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+ }
+ .page-header {
+    font-size: 30px;
+ }
+ .page-content p {
+    margin: 0 0 50px 0;
+ }
+}

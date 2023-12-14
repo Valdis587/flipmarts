@@ -1,0 +1,21 @@
+.page404 {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+        row-gap: 80px
+    }
+    &__title {
+        @include funcAdaptiv(font-size, 20, 100);
+        font-style: italic;
+        color: $ColorHead;
+    }
+    &__desc {
+        @include funcAdaptiv(font-size, 20, 50); 
+    }
+    &__button {
+        font-size: 20px;
+    }
+}

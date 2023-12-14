@@ -1,0 +1,117 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	 outline: none;
+}
+html,
+body {
+	height: 100%;
+	
+}
+
+input,
+button,
+textarea {
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+body {
+	line-height: 18px;
+	//text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+   font-size: 16px;
+color: #333;
+background-color: #fff;
+overflow-x: hidden;
+}
+
+.sitetitle {
+	position: relative;
+	border-bottom: 3px solid;
+	  border-bottom-color: currentcolor;
+	border-color: $ColorHead;
+	font-size: 100%;
+	padding: 0;
+	margin: 0px 0px -1px 0px;
+	height: 40px;
+}
+.sitetitle::before {
+	content: "";
+	border: 1px solid #ddd;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	top: 3px;
+	left: 0;
+	right: 0;
+}
+.sitetitle span{
+	display: inline-block;
+	font-size: 16px;
+	text-transform: uppercase;
+	position: relative;
+	color: $ColorTextHead;
+	line-height: 40px;
+	padding: 0 18px;
+	background-color: $ColorHead;
+}
+.sitetitle span::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	width: 0;
+	height: 0;
+	border-bottom: 40px solid $ColorHead;
+	right: -19px;
+	border-right: 20px solid transparent;
+ }

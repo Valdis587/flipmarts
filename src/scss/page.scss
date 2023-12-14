@@ -1,0 +1,52 @@
+.page {
+    &__col {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        @media(max-width: 810px){
+            flex-direction: column;
+        }
+    }
+    &__map, &__contacts {
+      width: 49%;
+      @media(max-width: 810px){   
+      width: 100%;
+    }
+    }
+    &__contacts-list {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        font-size: 20px;
+        li {
+            transition: all 0.6s ease 0.3s;
+        }
+        li:hover {
+            color: $ColorHead;
+        }
+        li i {
+            padding: 0 10px 0 0;
+            font-size: 18px;
+            color: $ColorHead;
+        }
+    }
+    &__left, &__text {
+        width: 50%;
+       
+        @media(max-width: 810px){   
+            width: 100%;
+          }
+    }
+    &__img {
+        max-width: 600px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__text {
+        padding: 5px;
+    }
+}

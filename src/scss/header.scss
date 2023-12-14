@@ -1,0 +1,141 @@
+.header {
+   background-color: $backHeaderColor;
+   color: $textHeaderColor;
+   &__content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+   }
+   &__top-line {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      min-height: 40px;
+   }
+   &__top-menu {
+      display: flex;
+      column-gap: 10px;
+      font-size: 12px;
+      @media(max-width: 460px) {
+         display: none;
+      }
+      li {
+         transition: all 0.6s ease 0.3s;
+      }
+      li:hover {
+         color: $ColorHead;
+      }
+      li a {
+         padding: 0 5px;
+      }
+   }
+   &__center-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      @media(max-width: 460px) {
+        flex-direction: column;
+         justify-content: center;
+      }
+   }
+   &__logo {
+      flex: 0 0 19.33%;
+      max-width: 19.33%;
+      height: 40px;
+      margin: 0 auto;
+      @media(max-width: 1000px) {
+         flex: 1 1 29.33%;
+         max-width: 29.33%;
+      }
+      @media(max-width: 700px) {
+         flex: 1 1 49.33%;
+         max-width: 49.33%;
+      }
+      @media(max-width: 460px) {
+         flex: 1 1 100%;
+         max-width: 100%;
+         img {
+            margin: 0 auto;
+         }
+      }
+   }
+   &__search-box {
+      flex: 1 1 59.33%;
+      max-width: 59.33%;
+      margin: 0 auto;
+      @media(max-width: 1000px) {
+         flex: 1 1 39.33%;
+         max-width: 39.33%;
+      }
+      @media(max-width: 770px) {
+         display: none;
+      }
+      @media(max-width: 460px) {
+         flex: 1 1 100%;
+         max-width: 100%;
+      }
+   }
+  &__search {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+ 
+  }
+  &__search-select {
+   padding: 10px;
+   background-color: #fff;
+   color: #6b6b6b;
+   border: 1px solid #ddd;
+   border-radius: 3px;
+   @media(max-width: 850px) { 
+      display: none;
+   }
+  }
+  &__search-input {
+   padding: 10px 5px;
+   width: 100%;
+   color: #6b6b6b;
+   border: 1px solid #ddd;
+   border-radius: 3px;
+  }
+  &__search-button {
+   padding: 10px;
+   background-color: $ColorHead;
+   color: $textHeaderColor;
+   border-radius: 3px;
+  }
+  &__minicart-box {
+   flex: 0 0 19.33%;
+   max-width: 19.33%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 10px;
+   position: relative;
+   margin: 0 auto;
+   cursor: pointer;
+   @media(max-width: 1000px) {
+      flex: 1 1 29.33%;
+      max-width: 29.33%;
+   }
+   @media(max-width: 700px) {
+      flex: 1 1 49.33%;
+      max-width: 49.33%;
+   }
+   @media(max-width: 460px) {
+      flex: 1 1 100%;
+      max-width: 100%;
+      text-align: center;
+   }
+  }
+  &__minicart-item-num {
+   padding: 4px 7px;
+   background-color: $ColorHead;
+   border-radius: 100%;
+   font-size: 12px;
+  }
+ 
+
+}
+@import './menu.scss';

@@ -1,0 +1,115 @@
+.sidebar {
+    min-width: 300px;
+    &__widget {
+        width: 100%;
+        margin: 0 0 20px 0;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        .sitetitle::before {
+            border: none;
+        }
+    }
+    &__wiget-body {
+        padding: 10px;
+    }
+    &__wiget-category-list {
+        max-width: 150px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        color: rgb(92, 92, 92);
+        li a {
+            transition: all 0.6s ease 0.3s;
+        }
+        li a:hover {
+            color: $ColorHead;
+        }
+
+    
+    .sub-cat-list {
+        display: none;
+    }
+    .cat-open {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        margin: 10px 0;
+    }
+}
+    &__wiget-last-news-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    &__wiget-last-news-item {
+        display: flex;
+        column-gap: 5px;
+        align-items: center;
+        img {
+            width: 100px;
+            height: 50px;
+            transition: all 0.6s ease 0.3s;
+            border-radius: 3px;
+        }
+        img:hover {
+            border: 1px solid $ColorHead;
+        }
+    }
+    &__wiget-last-news-title {
+        transition: all 0.6s ease 0.3s;
+        text-align: left;
+    }
+    &__wiget-last-news-title:hover { 
+        color: $ColorHead;
+    }
+    &__reviews-img {
+        width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+        }
+    }
+    &__reviews-item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        text-align: center;
+    }
+    &__reviews-neme {
+        font-size: 18px;
+    }
+    &__reviews-rewievs {
+        font-style: italic;
+    }
+    &__carusel-product {
+        margin: 0 auto;
+        max-width: 300px;
+        .productShopcart__images-dop {
+            max-width: 100%;
+            img {
+                
+                width: 100%;
+                height: 300px;
+                border: 1px solid #ddd;
+        border-radius: 3px;
+            }
+            .img2 {
+                display: none;
+            }
+        }
+        .productShopcart__images-dop:hover {
+            .img1 {
+                display: none;
+            }
+            .img2 {
+                display: block;
+            }
+        }
+    }
+
+}

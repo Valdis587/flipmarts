@@ -1,0 +1,16 @@
+.yith-wcan, .yith-wcan-filters {
+    padding: 20px;
+}
+.widget_yith-woocommerce-ajax-navigation-filters {
+    .filter-title {
+        font-size: 18px;
+    }
+    .filter-content {
+        margin: 10px 0 0 0;
+        padding: 0 10px;
+    }
+}
+.woocommerce .widget_layered_nav ul.yith-wcan-label li a:hover, .woocommerce-page .widget_layered_nav ul.yith-wcan-label li a:hover, .woocommerce .widget_layered_nav ul.yith-wcan-label li.chosen a, .woocommerce-page .widget_layered_nav ul.yith-wcan-label li.chosen a{
+    background-color: $ColorHead;
+}
+

@@ -1,0 +1,128 @@
+.footer {
+   margin: 20px 0 0 0;
+   background-color: $backFooterColor;
+   color: $textFooterColor;
+   &__content {
+      padding: 50px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      @media(max-width: 810px) { 
+         flex-wrap: wrap;
+      }
+   }
+   &__content-item {
+      flex: 0 0 24.33%;
+      max-width: 24.33%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      @media(max-width: 810px) {
+         flex: 0 0 48%;
+      max-width: 48%;
+      }
+      @media(max-width: 500px) {
+         flex: 0 0 100%;
+         max-width: 100%;
+       }
+   }
+   &__title {
+      text-align: center;
+      font-size: 20px;
+   }
+   &__contanct-list {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      row-gap: 20px;
+      li i {
+         padding: 10px;
+      }
+   }
+   &__menu-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+     text-align: center;
+      li i {
+         font-size: 12px;
+         padding: 0 5px;
+      }
+      li {
+         transition: all 0.6s ease 0.3s;
+      }
+      li:hover {
+         color: $ColorHead;
+      }
+   }
+   &__buttom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      @media(max-width: 810px) {  
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+   }
+ &__buttom-item {
+   width: 100%;
+ }
+   .social-list {
+      display: flex;
+      justify-content: center;
+      column-gap: 10px;
+      li i{
+      font-size: 20px;
+      padding: 10px;
+      border: 1px solid $textFooterColor;
+      border-radius: 3px;
+      transition: all 0.6s ease 0.3s;
+      }
+      li i:hover {
+         background-color: $ColorHead;
+      }
+   }
+   &__paypal {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      justify-content: center;
+      li {
+         max-width: 45px;
+         img {
+            width: 100%;
+            height: 28px;
+         }
+      }
+   }
+   &__copy {
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      margin: 20px 0 0 0;
+      position: relative;
+      p {
+         padding: 20px 0;
+      }
+   }
+   &__back {
+      position: fixed;
+      z-index: 100;
+      bottom: 50px;
+      right: 50px;
+      transform: rotate(180deg);
+      cursor: pointer;
+      i {
+         font-size: 30px;
+         padding: 10px;
+         border-radius: 3px;
+         background-color: $ColorHead;
+         color: $textHeaderColor;
+      }
+   }
+   .hidden-top {
+      display: none;
+   }
+}
